@@ -8,10 +8,8 @@
   },
   "scripts": {
     "dev": "cd public && live-server --port=3000",
-    "test": "npx playwright test --project=webkit",
-    "test:caseSwitcher": "jest ./test/caseSwitcher.test.js",
-    "test:chatRoom": "jest ./test/chatRoom.test.js",
-    "test:blockBusters": "jest ./test/blockBusters.test.js"
+    "test-server": "cd public && live-server --port=3000 --no-browser",
+    "test": "npx playwright test --project=webkit"
   },
   "author": "",
   "license": "ISC",
